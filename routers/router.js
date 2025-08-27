@@ -3,8 +3,12 @@ import LeadController from '../controller/leadController.js';
 
 const router = Router();
 
-router.get('/leads', LeadController.listarLead);
+router.get('/usuarios', LeadController.listarLead);
 
-router.post('/leads', LeadController.criarLead);
+router.post('/usuarios', LeadController.criarLead);
+
+router.put('/usuarios/:id', LeadController.atualizarLead);
+
+router.delete('/usuarios/:id', LeadController.deletarLead);
 
 export default router;
