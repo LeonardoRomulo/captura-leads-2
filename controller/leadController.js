@@ -1,5 +1,5 @@
-import Lead from "../model/leads";
-import pool from "../model/conexao";
+import Lead from "../model/leads.js";
+import pool from "../model/conexao.js";
 
 class LeadController {
     static criarLead(req,res){
