@@ -4,12 +4,12 @@ import validarLead from '../middleware/validarLead.js';
 
 const router = Router();
 
-router.get('/usuarios', validarLead, LeadController.listarLead);
+router.get('/usuarios', LeadController.listarLead);
 
 router.post('/usuarios', validarLead, LeadController.criarLead);
 
 router.put('/usuarios/:id', validarLead, LeadController.atualizarLead);
 
-router.delete('/usuarios/:id', validarLead, LeadController.deletarLead);
+router.delete('/usuarios/:id', LeadController.deletarLead);
 
 export default router;
